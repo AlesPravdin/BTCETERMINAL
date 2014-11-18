@@ -1,0 +1,17 @@
+{
+  "Key1": {
+    "name": "Key1",
+    "key": "XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX",
+    "secret": "blablabla02bfe9e7c7602bfe9e7c7602bfe9e7c7602bfe9e7c7535blablabla"
+  },
+  "Key2": {
+    "name": "Key2",
+    "key": "YYYYYYYY-YYYYYYYY-YYYYYYYY-YYYYYYYY-YYYYYYYY",
+    "secret": "blablablaab5ca1c13cbec941aab5ca1c13cbec941aab5ca1c13cbeblablabla"
+  },
+  "Key3": {
+    "name": "Key3",
+    "key": "ZZZZZZZZ-ZZZZZZZZ-ZZZZZZZZ-ZZZZZZZZ-ZZZZZZZZ",
+    "secret": "blablabla45254d561b4c73ddff09e5e3945254d561b4c73ddff09eblablabla"
+  }
+}
