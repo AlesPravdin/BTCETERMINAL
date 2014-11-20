@@ -1,0 +1,18 @@
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    ivy
+}
+
+dependencies {
+    ivy "org.apache.ivy:ivy:2.3.0"
+    compile "org.codehaus.groovy:groovy-all:2.3.7"
+}
+
+tasks.withType(GroovyCompile) {
+    groovyClasspath += configurations.ivy
+}
