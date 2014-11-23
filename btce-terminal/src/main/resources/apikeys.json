@@ -1,17 +1,23 @@
 {
-  "test1": {
-    "name": "test1",
-    "key": "XRHUAED1-KTKK61XT-P3UEUP7F-0L34SAYV-UT9CR1GO",
-    "secret": "66899aa402ac73d824c07580af8a7c63102bfe9e7c7665a70a5a749ae73f85a7"
+  "TradeTerminal": {
+    "name": "TradeTerminal",
+    "key": "REHACMYQ-E75RQEUX-TXHZUA1N-HOR1CG73-MSF7YJ30",
+    "secret": "1e8fb7d8f1384deeea7d510dd3be59e162d7345605a9a68ee32530e3689a5ba0"
   },
-  "InfoPoller": {
-    "name": "InfoPoller",
-    "key": "Y6BGGSRF-N31HG34U-3I3UFNDY-V3KPU3AH-F6PXUEFL",
-    "secret": "9ce7bd121d89eacfeb890c07757657f5ab5ca1c13cbec941a3d48d853c7ef932"
+  "key1": {
+    "name": "key1",
+    "key": "XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX",
+    "secret": "4c07580af8a7c63102bfe9e7c764c07580af8a7c63102bfe9e7c76jffhdsjfhk"
   },
-  "Bkg1": {
-    "name": "Bkg1",
+  "key2": {
+    "name": "key2",
+    "key": "YYYYYYYY-YYYYYYYY-YYYYYYYY-YYYYYYYY-YYYYYYYY",
+    "secret": "890c07757657f5ab5c890c07757657f5ab5c890c07757657f5ab5c890cf5ab5c"
+  },
+  "key3": {
+    "name": "key3",
     "key": "W09QK0AS-A2SATWJJ-28Z927DJ-VL9QYPVP-53ZFBB10",
-    "secret": "78b864e69e75fc6875c1345254d561b4c73ddff09e5e396333fd5580ad7a9fe5"
+    "key": "ZZZZZZZZ-ZZZZZZZZ-ZZZZZZZZ-ZZZZZZZZ-ZZZZZZZZ",
+    "secret": "254d561b4c73d254d561b4c73d254d561b4c73d254d561b4c73d254d561bs73d"
   }
 }
