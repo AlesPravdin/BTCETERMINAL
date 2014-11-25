@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<project name="btceterminal" default="dist" basedir=".">
-    <property name="src" location="src"/>
-
-    <target name="dist" description="generate the distribution">
-        <jar jarfile="btceterminal.jar" basedir="${src}"/>
-    </target>
-</project>
