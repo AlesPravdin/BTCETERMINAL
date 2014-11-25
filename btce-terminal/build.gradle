@@ -2,7 +2,7 @@ apply plugin: 'groovy'
 apply plugin: 'maven'
 
 group = 'by.groovycoin'
-version = '0.9.2'
+version = '0.9.31'
 
 repositories {
     mavenCentral()
@@ -15,6 +15,7 @@ configurations {
 dependencies {
     ivy "org.apache.ivy:ivy:2.3.0"
     compile "org.codehaus.groovy:groovy-all:2.3.7"
+    compile group: 'org.slf4j', name:'slf4j-api', version: '1.7.7'
 }
 
 tasks.withType(GroovyCompile) {

@@ -1,17 +1,15 @@
 package by.groovycoin.btce.terminal.traits
 
 import groovy.json.JsonSlurper
-import org.slf4j.Logger
-import org.slf4j.LoggerFactory
-import by.groovycoin.btce.terminal.LoggerName
+import groovy.util.logging.Slf4j
 import by.groovycoin.btce.terminal.MethodCallerProvider
 
 /**
  * Created by Ales Pravdin on 10/16/14.
  */
-class TraitBaseDelegate {
 
-    Logger logger = LoggerFactory.getLogger(LoggerName.TRADETERMINAl.name)
+@Slf4j()
+class TraitBaseDelegate {
 
     private final JsonSlurper slurper = new JsonSlurper()
     private final String methodName
@@ -29,16 +27,16 @@ class TraitBaseDelegate {
     private String lastRaw
 
     String requestRaw() {
-        logger.info("[${methodCallerProvider.getName()}] requestRaw {}",methodName)
+        log.info "[${methodCallerProvider.getName()}] requestRaw {}", methodName
         lastRaw = methodCallerProvider.getCaller().call(methodName);
-        logger.info("[${methodCallerProvider.getName()}] requestRaw {}={}",methodName, lastRaw)
+        log.info "[${methodCallerProvider.getName()}] requestRaw {}={}", methodName, lastRaw
         lastRaw
     }
 
     def requestRaw(final Map params) {
-        logger.info("[${methodCallerProvider.getName()}] requestRaw {}{}",methodName, params)
+        log.info "[${methodCallerProvider.getName()}] requestRaw {}{}", methodName, params
         lastRaw = methodCallerProvider.getCaller().call(methodName, params);
-        logger.info("[${methodCallerProvider.getName()}] {}={}",methodName, lastRaw)
+        log.info "[${methodCallerProvider.getName()}] {}={}", methodName, lastRaw
         lastRaw
     }
 
