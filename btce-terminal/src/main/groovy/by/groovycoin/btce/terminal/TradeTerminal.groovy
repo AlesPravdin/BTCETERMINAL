@@ -2,12 +2,14 @@ package by.groovycoin.btce.terminal
 
 import groovy.json.JsonSlurper
 import by.groovycoin.btce.terminal.traits.*
+import groovy.util.logging.Slf4j
 
 import java.util.concurrent.atomic.AtomicBoolean
 
 /**
  * Created by Ales Pravdin on 10/11/14.
  */
+@Slf4j()
 final class TradeTerminal implements InfoTrait, TransHistoryTrait, TradeHistoryTrait, ActiveOrdersTrait, CancelOrderTrait, TradeTrait {
 
     private final JsonSlurper slurper
@@ -23,11 +25,15 @@ final class TradeTerminal implements InfoTrait, TransHistoryTrait, TradeHistoryT
     private final AtomicBoolean initiated = new AtomicBoolean(false)
 
     def init() {
+        log.info "Trade terminal '${name}' init started"
         if (!initiated.get()) {
 
             def info = requestInfo()
             if (info == null) {
+
                 def rawInfo = getLastRawInfoParsed()
+                log.info "Trade terminal '${name}'. Trying to re-init after first attempt failure '${rawInfo}'"
+
                 tryRestore(rawInfo[0]?.'error')
 
                 if (requestInfo() == null) {
@@ -37,6 +43,7 @@ final class TradeTerminal implements InfoTrait, TransHistoryTrait, TradeHistoryT
 
             initiated.set(true)
         }
+        log.info "Trade terminal '${name}' init ended"
     }
 
     MethodCaller getCaller() {
