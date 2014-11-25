@@ -11,3 +11,7 @@ Should you find any part of this project not as groovy as it might be don't hesi
 Cheers,
 Ales
 
+P.S.
+This project was initially inspire by
+http://pastebin.com/jyd9tACF
+
