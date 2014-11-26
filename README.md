@@ -16,11 +16,11 @@ Groovy client for BTC-E trade API
 
 5. Use ./src/examples as starting and expiration point for your own scripts.
 
-Should you find any part of this project not as groovy as it might be don't hesitate to give me a note o even better to participate!
+Should you find any part of this project not as groovy as it might be don't hesitate to give me a note or even better to participate!
 
 Cheers,
 Ales
 
 P.S.
-This project was initially inspire by
+This project was initially inspired by
 http://pastebin.com/jyd9tACF
