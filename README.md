@@ -18,9 +18,9 @@ TradeTerminalManager tradeTerminalManager = new TradeTerminalManager("apikeys.js
 TradeTerminal tt = tradeTerminalManager.getTerminal("TradeTerminal")
 
 println tt.getFunds()
-tt.placeOrder("usd_cnh", TradeIntention.BUY, "5", "1")
-tt.cancelOrder("466XXX858")
-tt.requestActiveOrders()
+println tt.placeOrder("usd_cnh", TradeIntention.BUY, "5", "1")
+println tt.requestActiveOrders()
+println tt.cancelOrder("466XXX858")
 ```
 
 
