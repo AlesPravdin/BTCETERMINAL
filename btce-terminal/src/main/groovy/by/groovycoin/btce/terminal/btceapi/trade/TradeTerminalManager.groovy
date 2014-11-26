@@ -1,4 +1,4 @@
-package by.groovycoin.btce.terminal
+package by.groovycoin.btce.terminal.btceapi.trade
 
 import groovy.json.JsonSlurper
 

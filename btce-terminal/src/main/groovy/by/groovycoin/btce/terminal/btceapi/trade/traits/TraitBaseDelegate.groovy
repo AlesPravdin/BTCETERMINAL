@@ -1,8 +1,8 @@
-package by.groovycoin.btce.terminal.traits
+package by.groovycoin.btce.terminal.btceapi.trade.traits
 
 import groovy.json.JsonSlurper
 import groovy.util.logging.Slf4j
-import by.groovycoin.btce.terminal.MethodCallerProvider
+import by.groovycoin.btce.terminal.btceapi.trade.MethodCallerProvider
 
 /**
  * Created by Ales Pravdin on 10/16/14.

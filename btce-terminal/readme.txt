@@ -4,6 +4,10 @@
 4. Build and install btce-terminal in your local maven repository with:
     4.1 Gradle
         gradle install
+    4.2
+        Maven
+        mvn clean install
+
 5. Use ./src/examples as starting and expiration point for your own scripts.
 
 Should you find any part of this project not as groovy as it might be don't hesitate to give me a note o even better to participate!

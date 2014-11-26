@@ -1,6 +1,6 @@
-package by.groovycoin.btce.terminal.traits
+package by.groovycoin.btce.terminal.btceapi.trade.traits
 
-import by.groovycoin.btce.terminal.MethodCallerProvider
+import by.groovycoin.btce.terminal.btceapi.trade.MethodCallerProvider
 
 /**
  * Created by Ales Pravdin on 10/15/14.
@@ -9,7 +9,7 @@ trait CancelOrderTrait implements MethodCallerProvider {
     private final TraitBaseDelegate traitDelegate = new TraitBaseDelegate(this, "CancelOrder")
 
     def cancelOrder(def orderId) {
-        def cancelResult = traitDelegate.request(["order_id": orderId])
+        def cancelResult = traitDelegate.request(["order_id": orderId as String])
         cancelResult?.'funds'
     }
 

@@ -11,7 +11,7 @@
 
     <groupId>by.groovycoin</groupId>
     <artifactId>btce-terminal</artifactId>
-    <version>0.9.4m</version>
+    <version>0.9.5m</version>
     <packaging>jar</packaging>
 
     <dependencies>
