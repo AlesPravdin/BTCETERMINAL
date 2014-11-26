@@ -1,0 +1,23 @@
+{
+  "TradeTerminal": {
+    "name": "TradeTerminal",
+    "key": "REHACMYQ-E75RQEUX-TXHZUA1N-HOR1CG73-MSF7YJ30",
+    "secret": "1e8fb7d8f1384deeea7d510dd3be59e162d7345605a9a68ee32530e3689a5ba0"
+  },
+  "key1": {
+    "name": "key1",
+    "key": "XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX",
+    "secret": "4c07580af8a7c63102bfe9e7c764c07580af8a7c63102bfe9e7c76jffhdsjfhk"
+  },
+  "key2": {
+    "name": "key2",
+    "key": "YYYYYYYY-YYYYYYYY-YYYYYYYY-YYYYYYYY-YYYYYYYY",
+    "secret": "890c07757657f5ab5c890c07757657f5ab5c890c07757657f5ab5c890cf5ab5c"
+  },
+  "key3": {
+    "name": "key3",
+    "key": "W09QK0AS-A2SATWJJ-28Z927DJ-VL9QYPVP-53ZFBB10",
+    "key": "ZZZZZZZZ-ZZZZZZZZ-ZZZZZZZZ-ZZZZZZZZ-ZZZZZZZZ",
+    "secret": "254d561b4c73d254d561b4c73d254d561b4c73d254d561b4c73d254d561bs73d"
+  }
+}
