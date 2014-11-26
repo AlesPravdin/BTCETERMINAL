@@ -3,8 +3,8 @@
 @Grab('ch.qos.logback:logback-core:1.1.1')
 @Grab('ch.qos.logback:logback-classic:1.1.1')
 @Grab(group = 'org.codehaus.groovy.modules.http-builder', module = 'http-builder', version = '0.7.1')
-import by.groovycoin.btce.terminal.TradeTerminal
-import by.groovycoin.btce.terminal.TradeTerminalManager
+import by.groovycoin.btce.terminal.btceapi.trade.TradeTerminal
+import by.groovycoin.btce.terminal.btceapi.trade.TradeTerminalManager
 
 /**
  * Created by Ales Pravdin on 10/7/14.
