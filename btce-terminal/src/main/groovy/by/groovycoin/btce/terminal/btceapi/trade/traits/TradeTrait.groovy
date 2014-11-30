@@ -9,7 +9,7 @@ import by.groovycoin.btce.terminal.btceapi.trade.MethodCallerProvider
 trait TradeTrait implements MethodCallerProvider {
     private final TraitBaseDelegate traitDelegate = new TraitBaseDelegate(this, "Trade")
 
-    def placeOrder(
+    Map<String, ?> placeOrder(
             final String symbol,
             final TradeIntention tradeIntention,
             final String rate,
