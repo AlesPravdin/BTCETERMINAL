@@ -8,25 +8,25 @@ import by.groovycoin.btce.terminal.btceapi.trade.MethodCallerProvider
 trait ActiveOrdersTrait implements MethodCallerProvider {
     private final TraitBaseDelegate traitDelegate = new TraitBaseDelegate(this, "ActiveOrders")
 
-    def requestRawActiveOrders() { traitDelegate.requestRaw() }
+    String requestRawActiveOrders() { traitDelegate.requestRaw() }
 
-    def requestRawActiveOrders(Map params) { traitDelegate.requestRaw(params) }
+    String requestRawActiveOrders(Map params) { traitDelegate.requestRaw(params) }
 
-    def getRawActiveOrders() { traitDelegate.getRaw() }
-
-
-    def requestActiveOrders() { traitDelegate.request() }
-
-    def requestActiveOrders(Map params) { traitDelegate.request(params) }
-
-    def getActiveOrders() { traitDelegate.getLast() }
-
-    def getActiveOrders(Map params) { traitDelegate.getLast(params) }
+    String getRawActiveOrders() { traitDelegate.getRaw() }
 
 
-    def requestActiveOrders(def symbol) { requestActiveOrders(["pair": symbol.toLowerCase()]) }
+    Map<String, Map<String, ?>> requestActiveOrders() { traitDelegate.request() }
 
-    def getActiveOrders(def symbol) { getActiveOrders(["pair": symbol.toLowerCase()]) }
+    Map<String, Map<String, ?>> requestActiveOrders(Map params) { traitDelegate.request(params) }
+
+    Map<String, Map<String, ?>> getActiveOrders() { traitDelegate.getLast() }
+
+    Map<String, Map<String, ?>> getActiveOrders(Map params) { traitDelegate.getLast(params) }
+
+
+    Map<String, Map<String, ?>> requestActiveOrders(def symbol) { requestActiveOrders(["pair": symbol.toLowerCase()]) }
+
+    Map<String, Map<String, ?>> getActiveOrders(def symbol) { getActiveOrders(["pair": symbol.toLowerCase()]) }
 
 }
 
