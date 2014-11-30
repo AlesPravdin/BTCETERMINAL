@@ -33,7 +33,7 @@ class TraitBaseDelegate {
         lastRaw
     }
 
-    def requestRaw(final Map params) {
+    String requestRaw(final Map params) {
         log.info "[${methodCallerProvider.getName()}] requestRaw {}{}", methodName, params
         lastRaw = methodCallerProvider.getCaller().call(methodName, params);
         log.info "[${methodCallerProvider.getName()}] {}={}", methodName, lastRaw
