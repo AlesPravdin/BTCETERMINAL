@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<project name="MyJointBuild" default="compile">
+    <property name="groovy.home" value="/Users/Pablo/.gvm/groovy/2.3.7"/>
+    <property name="groovy.version" value="2.3.7"/>
+
+    <path id="groovy.classpath">
+        <fileset dir="${groovy.home}/embeddable">
+            <include name="groovy-all-${groovy.version}.jar"/>
+        </fileset>
+        <fileset dir="${groovy.home}/lib">
+            <include name="ivy-2.3.0.jar"/>
+        </fileset>
+    </path>
+
+    <target name="clean" description="remove all built files">
+        <delete dir="classes"/>
+    </target>
+
+    <target name="compile" depends="init" description="compile java and groovy sources">
+        <mkdir dir="classes"/>
+        <groovyc destdir="classes" srcdir="src" listfiles="true" keepStubs="true" stubdir="stubs">
+            <javac debug="on" deprecation="true"/>
+            <classpath>
+                <fileset dir="classes"/>
+                <path refid="groovy.classpath"/>
+            </classpath>
+        </groovyc>
+    </target>
+
+    <target name="init">
+        <taskdef name="groovyc" classname="org.codehaus.groovy.ant.Groovyc" classpathref="groovy.classpath"/>
+    </target>
+</project>

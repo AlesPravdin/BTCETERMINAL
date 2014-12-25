@@ -1,4 +1,4 @@
-package by.pl.groovycoin.btce.terminal
+package by.groovycoin.btce.terminal
 
 import groovyx.net.http.ContentType
 import groovyx.net.http.HTTPBuilder

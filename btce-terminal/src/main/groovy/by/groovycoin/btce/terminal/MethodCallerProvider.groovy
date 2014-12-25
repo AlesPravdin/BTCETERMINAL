@@ -1,4 +1,4 @@
-package by.pl.groovycoin.btce.terminal
+package by.groovycoin.btce.terminal
 /**
  * Created by Ales Pravdin on 10/23/14.
  */

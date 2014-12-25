@@ -1,7 +1,7 @@
-package by.pl.groovycoin.btce.terminal
+package by.groovycoin.btce.terminal
 
 import groovy.json.JsonSlurper
-import by.pl.groovycoin.btce.terminal.traits.*
+import by.groovycoin.btce.terminal.traits.*
 
 import java.util.concurrent.atomic.AtomicBoolean
 

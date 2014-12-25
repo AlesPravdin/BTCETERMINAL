@@ -1,7 +1,7 @@
-package by.pl.groovycoin.btce.terminal.traits
+package by.groovycoin.btce.terminal.traits
 
-import by.pl.groovycoin.btce.terminal.TradeIntention
-import by.pl.groovycoin.btce.terminal.MethodCallerProvider
+import by.groovycoin.btce.terminal.TradeIntention
+import by.groovycoin.btce.terminal.MethodCallerProvider
 
 /**
  * Created by Ales Pravdin on 10/15/14.
