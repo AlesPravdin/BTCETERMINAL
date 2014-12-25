@@ -6,7 +6,7 @@ apply plugin: 'groovy'
 apply plugin: 'maven'
 
 group = 'by.groovycoin'
-version = '0.9.52g'
+version = '0.9.54g'
 
 repositories {
     mavenCentral()
